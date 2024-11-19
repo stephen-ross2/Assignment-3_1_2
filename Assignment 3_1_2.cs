@@ -34,16 +34,17 @@ namespace Assignment_3_1_2
 
         static bool IsLeapYear(int year)
         {
-            if (year % 4 == 0)
+            if ((year % 100 == 0) && (year % 400 == 0))
 
             {
-                if (year % 100 == 0)
-
-                {
-                    return year % 400 == 0;
-                }
+                //is a leap year
+            }
+            
+            if (year % 4 == 0)
+            {
                 return true;
             }
+
             return false;
 
         }
